@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./css/geolocation.css" />
+  <link rel="stylesheet" href="./css/industries.css" />
+  <link rel="stylesheet" href="./css/companysize.css" />
+  <link rel="stylesheet" href="./css/Jobtitle.css" />
+
+</head>
+
+<body>
+
+
+  <!--navbar-->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+    <div class="nav-logo">
+      <img src="assets/ldmaBeigeLogoNoBkgr100.png">
+    </div>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse container" id="collapsibleNavId">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <!--header-->
+  <div class="header">
+    <div>
+      <h3>AfriSeek Database</h3>
+    </div>
+  </div>
+
+
+  <!--app-->
+  <div class="app">
+
+    <!--sidebar-->
+    <div class="app__sidebar">
+      <div class="app__sideHeader"> <strong>
+          Build a list </strong>
+      </div>
+
+      <div class="tab">
+        <div class="logo">
+          <img src="assets/x1000070x70.png">
+        </div>
+        <br>
+        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Industry</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Company Size</button>
+        <br>
+        <div class="logo">
+          <img src="assets/ceos0170x70.png">
+        </div>
+        <br>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Job Title</button>
+        <br>
+        <div class="logo">
+          <img src="assets/transportDistribution70x70.png">
+        </div>
+        <br>
+        <button class="tablinks" onclick="openCity(event, 'America')">Geo Location</button>
+      </div>
+
+    </div>
+
+
+    <!--main-->
+    <div class="app__main">
+
+       <div class="container">
+        <div class="row">
+          <div class="companies_logo">
+            <img src="assets/x1000070x70.png">
+          </div> 
+          <h1 class = "companies">
+            
+            <b>4562</b> Companies
+          </h1>
+
+          <div class="people_logo">
+            <img src="assets/ceos0170x70.png">
+          </div>
+          <h1 class= "people">
+            <b>533 054</b> People
+          </h1>
+
+          <div class="row" style="margin-left: 2%;">
+            <button type="button" class="btn btn-outline-success">SAVE LIST</button>
+          </div>
+          <div class="row" style="margin-left: 4.0%;">
+            <button type="button" class="btn btn-outline-success">QUOTE ME</button>
+          </div>
+        </div>
+      </div> 
+
+      <!---Line under the menu-->
+      <hr class="line-hr" />
+
+      <!--breadcrumb menu-->
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+
+        </ol>
+      </nav>
+
+      <div id="London" class="tabcontent">
+        <div class="app">
+          <div class="app__industry">
+
+            <strong <h2 style="
+                  display: inline;
+                  font-size: 20px;
+                  position: relative;
+                  top: -25px;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color:  rgba(44, 95, 163, 1);"> INDUSTRY
+              </h2>
+            </strong>
+
+            <!--Industry-->
+            <div class="industry">
+              <img src="assets/asso.png" width="10%" height="5%;" style="float: left;">
+              <div class="left">Associations</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="industry">
+              <img src="assets/Real est.png" width="10%" height="5%;" style="float: left;">
+              <div class="left">Real Estate Industry</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="industry">
+              <img src="assets/asso.png" width="10%" height="5%; style=" float: left;">
+              <div class="left">Associations</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <div class="industry">
+              <img src="assets/Real est.png" width="10%" height="5%; style=" float: left;">
+              <div class="left">Real Estate Industry</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <!--Industry-->
+            <div class="industry">
+              <img src="assets/Health.png" width="10%" height="5%; style=" float: left;">
+              <div class="left">Health and Beauty</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--Industry-->
+            <div class="industry">
+              <img src="assets/Gov.png" width="10%" height="5%; style=" float: left;">
+              <div class="left">Government</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--Industry-->
+            <div class="industry">
+              <img src="assets/IT.png" width="10%" height="5%; style=" float: left;">
+              <div class="left">IT/Telecoms/Electrical</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="app__subsector">
+            <strong <h2 style="
+                  display: inline;
+                  font-size: 20px;
+                  position: relative;
+                  top: -33px;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color:  rgba(44, 95, 163, 1);">SUB-SECTORS
+              </h2>
+            </strong>
+
+
+            <!--Sub-sector-->
+            <div class="industry">
+              <img src="assets/Real est.png" width="10%" height="5%; style=" float: right;">
+              <div class="left">Associations</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!----subsecctor-->
+            <div class="industry">
+              <img src="assets/Health.png" width="10%" height="5%; style=" float: right;">
+              <div class="left">Health and Beauty</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--Sub-sector-->
+            <div class="industry">
+              <img src="assets/Real est.png" width="10%" height="5%; style=" float: right;">
+              <div class="left">Real Estate Industry</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!---Subsector-->
+            <div class="industry">
+              <img src="assets/Gov.png" width="10%" height="5%; style=" float: right;">
+              <div class="left">Government</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--Sub-sector-->
+            <div class="industry">
+              <img src="assets/Health.png" width="10%" height="5%; style=" float: right;">
+              <div class="left">Health and Beauty</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--Sub-sector-->
+            <div class="industry">
+              <img src="assets/Gov.png" width="10%" height="5%; style=" float: right;">
+              <div class="left">Government</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--Sub-sector-->
+            <div class="industry">
+              <img src="assets/IT.png" width="10%" height="5%; style=" float: right;">
+              <div class="left">IT/Telecoms/Electrical</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="Paris" class="tabcontent">
+        <div class="app">
+          <div class="app__company">
+            <strong <h2 style="font-size: 20px;font-family: Arial, Helvetica, sans-serif;color:#1a237e;">NUMBER OF STAFF
+              </h2></strong>
+
+            <!--range 1-->
+            <div class="company">
+              <div class="left">1 - 10</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <!--range 2-->
+            <div class="company">
+              <div class="left">11 - 50</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <!--range 3-->
+            <div class="company">
+              <div class="left">51 - 200</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--range 4-->
+            <div class="company">
+              <div class="left">201 - 500</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--range 5-->
+            <div class="company">
+              <div class="left">501 - 1000</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--range 6-->
+            <div class="company">
+              <div class="left">1001 - 5000</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Tokyo" class="tabcontent">
+        <div class="app">
+          <div id="app__job" style="position: relative; left: 5%">
+            <strong <h2
+              style="font-size: 20px;font-family: Arial, Helvetica, sans-serif;color:rgba(65, 132, 133, 1);">JOB
+              PROFILE</h2>
+            </strong>
+
+            <!--Job 1-->
+            <div class="job">
+              <div class="left">Middle Management</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--Job 1-->
+            <div class="job">
+              <div class="left">Finance</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--Job 1-->
+            <div class="job">
+              <div class="left">IT Management</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--Job 1-->
+            <div class="job">
+              <div class="left">Sales</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--Job 1-->
+            <div class="job">
+              <div class="left">Administration</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--Job 1-->
+            <div class="job">
+              <div class="left">Operations</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!---Job Title column-->
+          <div class="app__jobt" style="position: relative; left: 5%">
+            <strong <h2
+              style="font-size: 20px;font-family: Arial, Helvetica, sans-serif;color:rgba(65, 132, 133, 1);">JOB
+              TITLE</h2>
+            </strong>
+
+            <!--title-->
+            <div class="job">
+              <div class="left">Administration</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <!--title-->
+            <div class="industry">
+              <div class="left">Administrator</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--title-->
+            <div class="industry">
+              <div class="left">Receptionist</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--title-->
+            <div class="industry">
+              <div class="left">Technician</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--title-->
+            <div class="industry">
+              <div class="left">Manager</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--title-->
+            <div class="industry">
+              <div class="left">Accountant</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="America" class="tabcontent">
+        <div class="app">
+          <div class="app__province">
+            <strong <h2 style="
+                  display: inline;
+                  font-size: 20px;
+                  position: relative;
+                  top: -33px;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color:#1a237e;">
+              PROVINCE
+              </h2>
+            </strong>
+
+
+            <!--Province-->
+            <div class="province">
+              <div class="left">Limpopo</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <!--Province-->
+            <div class="province">
+              <div class="left">North West</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <!--Province-->
+            <div class="province">
+              <div class="left">Gauteng</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--Province-->
+            <div class="province">
+              <div class="left">Mpumalanga</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--Province-->
+            <div class="province">
+              <div class="left">Northern Cape</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--Province-->
+            <div class="province">
+              <div class="left">Free State</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--Province-->
+            <div class="province">
+              <div class="left">KwaZulu Natal</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="app__city">
+            <strong <h2 style="
+                  display: inline;
+                  font-size: 20px;
+                  position: relative;
+                  top: -33px;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color:#1a237e;">
+              CITY
+              </h2>
+            </strong>
+
+            <!--city-->
+            <div class="province">
+              <div class="left">Gras and Wetlands</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <!--city-->
+            <div class="province">
+              <div class="left">Highveld and Cosmos</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--city-->
+            <div class="province">
+              <div class="left">Highveld and Cosmos</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--city-->
+            <div class="province">
+              <div class="left">Lowveld</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <!--city-->
+            <div class="province">
+              <div class="left">Escarpment</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="app__town">
+            <strong <h2 style="
+                  display: inline;
+                  font-size: 20px;
+                  position: relative;
+                  top: -33px;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color:#1a237e;">
+              TOWN
+              </h2>
+            </strong>
+
+            <!--Town-->
+            <div class="province">
+              <div class="left">Aankoms</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <!--Town-->
+            <div class="province">
+              <div class="left">Balfour</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <!--Town-->
+            <div class="province">
+              <div class="left">Balfour</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <!--Town-->
+            <div class="province">
+              <div class="left">Arnkens</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <!--Town-->
+            <div class="province">
+              <div class="left">Anyspruit</div>
+              <div class="right">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----GEOLOCATION-->
+    </div>
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+
+
+  </div>
+
+
+  </div>
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
