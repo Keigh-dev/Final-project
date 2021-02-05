@@ -220,7 +220,7 @@ ul.nav.flex-column {
 .tabcontent {
   float: left;
   padding: 0px 12px;
-  width: 70%;
+  width: 100%;
   border-left: none;
   height: 300px;
   margin-top: 4%;
@@ -228,4 +228,9 @@ ul.nav.flex-column {
 .btn-outline-success {
   border-radius: 12px;
   height: 45px;
+}
+
+.geolocation-content-container {
+  display: flex;
+  flex-direction: row;
 }
